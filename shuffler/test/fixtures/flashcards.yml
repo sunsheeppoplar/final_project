@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  chinese: MyText
+  pinyin: MyText
+  def: MyText
+  user_id: 1
+
+two:
+  chinese: MyText
+  pinyin: MyText
+  def: MyText
+  user_id: 1
