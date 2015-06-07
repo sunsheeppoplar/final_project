@@ -1,0 +1,13 @@
+<% @flashcards.each do |flashcard| %>
+  <div class="flashcard-box">
+ 
+
+     <h1><%= link_to flashcard.chinese, user_flashcard_path(flashcard) %><br><%= flashcard.pinyin %><br><%= flashcard.defin %><hr></h1>
+     <h1><%= flashcard.pinyin %></h1>
+     <h1><%= flashcard.defin %></h1>
+
+
+  </div>
+<% end %>
+
+<%= link_to "Create new flashcards", new_user_flashcard %>
