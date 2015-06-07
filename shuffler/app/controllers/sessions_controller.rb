@@ -12,7 +12,7 @@ class SessionsController < ApplicationController
 		user = User.find_by({email: params[:email]})
 		if user && user.authenticate(params[:password])
 			session[:user_id] = user.id 
-			redirect_to user_path
+			redirect_to user_flashcards_path
 		else 
 			@email = params[:email]
 			flash.now[:error] = "Sorry, unknown combo! Try again, please!"
