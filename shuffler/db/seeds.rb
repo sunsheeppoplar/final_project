@@ -5,3 +5,5 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Flashcard.create(chinese: "隨便", pinyin: "suibian", defin: "whatever", user_id: 1)
