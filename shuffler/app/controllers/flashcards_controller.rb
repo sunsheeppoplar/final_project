@@ -13,6 +13,8 @@ class FlashcardsController < ApplicationController
 	end
 
 	def new
+		# so application.html.erb knows @user
+		@user = User.find(session[:user_id])
 		@user_id = User.find(session[:user_id])
 		@flashcard = Flashcard.new
 
@@ -25,6 +27,8 @@ class FlashcardsController < ApplicationController
 
 
 	def show
+		# so application.html.erb knows @user
+		@user = User.find(session[:user_id])
 		@flashcard = Flashcard.find(params[:id])
 		if @flashcard
 			render :show
@@ -38,7 +42,10 @@ class FlashcardsController < ApplicationController
 		Flashcard.find(params[:id]).destroy
 		redirect_to(user_flashcards_path)
 	end
-	
+
+	def search
+	end
+
 	private
 	def flashcard_params
 		params.require(:flashcard).permit(:chinese, :pinyin, :defin, :user_id)

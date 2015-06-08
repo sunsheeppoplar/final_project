@@ -6,6 +6,12 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+<header>
+	<% if @user %>
+	<%= link_to "Create new flashcards", new_user_flashcard_path %>
+	<%= link_to "Logout", session_path, method: :delete %> 
+	<% end %>
+</header>
 <body>
 
 <%= yield %>

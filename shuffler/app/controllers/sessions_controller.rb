@@ -3,8 +3,10 @@ class SessionsController < ApplicationController
 	before_action :authenticate, only: [:destroy]
 
 	#new session login
-	def new		
-		render :new		
+	def new
+		if session[:user_id]		
+		redirect_to user_flashcards_path
+		end		
 	end
 
 	# starts a new user session
