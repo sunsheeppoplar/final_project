@@ -1,5 +1,21 @@
-<div>
-<%= @flashcard.chinese %>
-<%= @flashcard.pinyin %>
-<%= @flashcard.defin %>
-</div>
+<body>
+	<span id='chicken'>
+	<div class='content' id='chinese'><%= @flashcard.chinese %></div>
+	<div class='content' id='pinyin'><%= @flashcard.pinyin %></div>
+	<div class='content' id='defin'><%= @flashcard.defin %></div>
+	</span>
+
+	<span id='chicken'>
+	<div class='action' data-content='#chinese'>
+		Show Chinese
+	</div>
+	<br>
+	<div class='action' data-content='#pinyin'>
+		Show Pinyin
+	</div>
+	<br>
+	<div class='action' data-content='#defin'>
+		Show Definition
+	</div>
+	</span>
+</body>
