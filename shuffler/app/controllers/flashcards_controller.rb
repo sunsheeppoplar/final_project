@@ -44,6 +44,17 @@ class FlashcardsController < ApplicationController
 	end
 
 	def search
+		# so application.html.erb knows @user
+		@user = User.find(session[:user_id])
+		query = params[:query]		
+		@results = HTTParty.get("http://ccdb.hemiola.com/characters/definition/#{query}?filter=gb&fields=kDefinition,kMandarin,string")
+
+		if @results 
+			render :search
+		else
+			render status: 400,
+			nothing: true
+		end
 	end
 
 	private

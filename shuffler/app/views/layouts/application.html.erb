@@ -8,8 +8,17 @@
 </head>
 <header>
 	<% if @user %>
-	<%= link_to "Create new flashcards", new_user_flashcard_path %>
-	<%= link_to "Logout", session_path, method: :delete %> 
+		<nav>
+		<%= link_to "All flashcards", user_flashcards_path %>
+		<%= link_to "Create new flashcards", new_user_flashcard_path %>
+		<%= link_to "Logout", session_path, method: :delete %> 
+		<!-- search bar to hit API -->
+		<%= form_tag("/user/flashcards/search", method: "post") do %>
+	  		<%= label_tag(:query, "Search by definition:") %>
+	  		<%= text_field_tag(:query) %>
+	  		<%= submit_tag("Search") %>
+		<% end %>
+		</nav>
 	<% end %>
 </header>
 <body>

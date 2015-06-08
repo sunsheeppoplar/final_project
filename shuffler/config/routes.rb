@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   resource :session, only: [:new, :create, :destroy]
 
+  post "user/flashcards/search" => "flashcards#search"
+
   resource :user do
     resources :flashcards
   end

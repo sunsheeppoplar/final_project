@@ -4,6 +4,7 @@ class SessionsController < ApplicationController
 
 	#new session login
 	def new
+		# if user is already logged in from before, shows them their index
 		if session[:user_id]		
 		redirect_to user_flashcards_path
 		end		
