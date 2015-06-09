@@ -1,10 +1,8 @@
 <% @flashcards.each do |flashcard| %>
 <div class="flashcard-box">
 
-
-	<h1 style=><%= link_to flashcard.chinese, user_flashcard_path(flashcard) %><br><%= flashcard.pinyin %><br><%= flashcard.defin %></h1>
-	<%= link_to "Delete", user_flashcard_path(flashcard), method: :delete %><hr>
-
+	<h3><%= link_to flashcard.chinese, user_flashcard_path(flashcard), class: 'link' %><br><%= flashcard.pinyin %><br><%= flashcard.defin %></h3>
+	<%= link_to "Delete", user_flashcard_path(flashcard), method: :delete, class: "delete" %><hr>
 </div>
 <% end %>
 

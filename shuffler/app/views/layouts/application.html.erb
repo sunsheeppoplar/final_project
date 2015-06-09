@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Shuffler</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+	<title>Shuffler</title>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
 </head>
 <header>
 	<% if @user %>
-		<nav>
-		<%= link_to "All flashcards", user_flashcards_path %>
-		<%= link_to "Create new flashcards", new_user_flashcard_path %>
-		<%= link_to "Logout", session_path, method: :delete %> 
-		<!-- search bar to hit API -->
-		<%= form_tag("/user/flashcards/search", method: "post") do %>
-	  		<%= label_tag(:query, "Search by definition:") %>
-	  		<%= text_field_tag(:query) %>
-	  		<%= submit_tag("Search") %>
-		<% end %>
-		</nav>
+	<h2 id="app-head">Shuffler</h2>
+	<nav>
+		<ul>
+			<li><%= link_to "All flashcards", user_flashcards_path, class: 'link' %></li>
+			<li><%= link_to "Create new flashcards", new_user_flashcard_path, class: 'link' %></li>
+			<li id='show_del'> Delete </li>
+			<li><%= link_to "Logout", session_path, method: :delete, class: 'link' %></li>
+			<!-- search bar to hit API -->
+			<%= form_tag("/user/flashcards/search", method: "post") do %>
+			<%= label_tag(:query, "Search by definition:") %>
+			<%= text_field_tag(:query) %>
+			<%= submit_tag("Search") %>
+			<% end %>
+		</ul>
+	</nav>
 	<% end %>
 </header>
 <body>
 
-<%= yield %>
+	<%= yield %>
 
 </body>
 </html>

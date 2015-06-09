@@ -14,11 +14,66 @@
  *= require_self
  *= require pure
  */
-
+#app-head {
+	font-size: 50px;
+}
+.link {
+	color: black;
+}
+header{
+	font-family: Georgia;
+}
+body {
+	font-family: Georgia;
+	text-align: center;
+	background: rgb(119,136,153);
+}
+#sign-in {
+	background-image: url("http://www.hdwallpaperscool.com/wp-content/uploads/2013/12/lotus-flower-hd-wallpapers-beautiful-desktop-background-photographs-widescreen.jpg");
+	background-size: cover;
+}
+#sign-in-content {
+	color: white;
+	position: relative;
+	right: 425px;
+	top: 30px;
+}
+/*show page divs*/
 .content {
 	display: none;
+	font-size: 60px;
+	padding-top: 100px;
 }
-
 #chinese {
 	display: block;
+}
+.delete {
+	display: none;
+	font-size: 20px;
+	color: rgb(218,112,214);
+}
+a:visited {
+    color: black;
+}
+a:link {
+    text-decoration: none;
+}
+nav {
+	color: black;
+	text-align: center;
+}
+nav ul {
+	list-style: none;
+}
+nav li {
+	display: inline-block;
+	font-size: 28px;
+	padding: 8px 15px 20px;
+}
+.flashcard-box {
+	display: inline-block;
+	width: 200px;
+	height: 100px;
+	margin: 1em;
+	border: 1px;
 }

@@ -1,7 +1,7 @@
 <%= form_for @flashcard,  html: {class: 'pure-form'}, url: {action: 'create'} do |f| %>
-    <%= f.text_field :chinese, placeholder: 'Chinese character' %><br>
-    <%= f.text_field :pinyin, placeholder: 'Pinyin' %><br>
-    <%= f.text_field :defin, placeholder: 'Definition' %><br>
+    <%= f.text_field :chinese, placeholder: 'Chinese character' %><br><br>
+    <%= f.text_field :pinyin, placeholder: 'Pinyin' %><br><br>
+    <%= f.text_field :defin, placeholder: 'Definition' %><br><br>
     <%= f.hidden_field :user_id, :value => session[:user_id] %>
     <%= f.submit %>
 <% end %>

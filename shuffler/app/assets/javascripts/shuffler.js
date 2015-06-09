@@ -12,4 +12,8 @@ $(document).ready(function() {
 		$(target).show();
 
 	});
+
+	$(document).on('click', '#show_del', function() {
+		$(".delete").show();
+	});
 });
