@@ -1,11 +1,13 @@
 <body>
-	<h3>
+	<h4>
+		<div class='content-box'>
 		<div class='content' id='chinese'><%= @flashcard.chinese %></div>
 		<div class='content' id='pinyin'><%= @flashcard.pinyin %></div>
 		<div class='content' id='defin'><%= @flashcard.defin %></div>
-	</h3>
+		</div>
+	</h4>
 
-	<span id='chicken'>
+	<div id='chicken'>
 	<div class='action' data-content='#chinese'>
 		Show Chinese
 	</div>
@@ -17,5 +19,5 @@
 	<div class='action' data-content='#defin'>
 		Show Definition
 	</div>
-	</span>
+	</div>
 </body>

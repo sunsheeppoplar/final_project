@@ -41,7 +41,7 @@ body {
 /*show page divs*/
 .content {
 	display: none;
-	font-size: 60px;
+	font-size: 50px;
 	padding-top: 100px;
 }
 #chinese {
@@ -50,7 +50,7 @@ body {
 .delete {
 	display: none;
 	font-size: 20px;
-	color: rgb(218,112,214);
+	color: rgb(72,61,139);
 }
 a:visited {
     color: black;
@@ -76,4 +76,11 @@ nav li {
 	height: 100px;
 	margin: 1em;
 	border: 1px;
+}
+.content-box {
+	border: solid;
+	border-width: 8px;
+	border-color: rgb(72,61,139);
+	padding-bottom: 60px;
+
 }
