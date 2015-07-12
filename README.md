@@ -1,4 +1,6 @@
 # Shuffler
+
+### background
 This project was created for the NYC General Assembly Web Development Immersive in the Lemon cohort of the March 2015 class. This was our third and final assigned personal project. We were given full reign on this project with very little limitations on what we could build. 
 
 I elected to build a flashcard application that primarily serves as a tool for learning Mandarin Chinese. The inspiration for this came from tutoring Chinese throughout college and realizing that there was a need out there for a simple, but efficient learning apparatus that would let you write out a three-sided flashcard. 
