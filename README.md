@@ -10,3 +10,13 @@ If you're not as familiar with learning Mandarin, the usual method that people a
 ### features
 
 #### tools of the trade
+1. The work flow and development narrative can be found, additionally, [here](https://trello.com/b/9cgD4uX8/general-assembly-final-project) on Trello. 
+
+2. The front-end was done using JQuery and vanilla Javascript. 
+
+3. The back-end was developed with Rails.
+
+4. Made API calls to [Chinese Character Web API](http://ccdb.hemiola.com/) with [httparty](https://github.com/jnunemaker/httparty). 
+
+### digital ocean url
+
