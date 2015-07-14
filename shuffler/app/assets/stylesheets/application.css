@@ -15,7 +15,7 @@
  *= require pure
  */
 #app-head {
-	font-size: 50px;
+	font-size: 65px;
 }
 .link {
 	color: black;
@@ -68,7 +68,7 @@ nav ul {
 nav li {
 	display: inline-block;
 	font-size: 28px;
-	padding: 8px 15px 20px;
+	padding: 0px 15px 20px;
 }
 .flashcard-box {
 	display: inline-block;
@@ -80,7 +80,7 @@ nav li {
 .content-box {
 	border: solid;
 	border-width: 8px;
-	border-color: rgb(72,61,139);
-	padding-bottom: 60px;
+	padding-bottom: 80px;
+	border-color: white;
 
 }
