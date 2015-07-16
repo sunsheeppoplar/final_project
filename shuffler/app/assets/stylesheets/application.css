@@ -20,7 +20,7 @@
 .link {
 	color: black;
 }
-header{
+header {
 	font-family: Georgia;
 }
 body {
@@ -85,5 +85,4 @@ nav li {
 	border-width: 8px;
 	padding-bottom: 80px;
 	border-color: white;
-
 }
