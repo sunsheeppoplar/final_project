@@ -33,10 +33,13 @@ body {
 	background-size: cover;
 }
 #sign-in-content {
-	color: white;
 	position: relative;
 	right: 425px;
 	top: 30px;
+}
+/*give color without affecting inner form text*/
+#sign-in-content h2, form label {
+	color: white;
 }
 /*show page divs*/
 .content {
