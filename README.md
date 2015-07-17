@@ -19,4 +19,5 @@ If you're not as familiar with learning Mandarin, the usual method that people a
 4. Made API calls to [Chinese Character Web API](http://ccdb.hemiola.com/) with [httparty](https://github.com/jnunemaker/httparty). 
 
 ### digital ocean url
+http://45.55.155.39:8080
 
