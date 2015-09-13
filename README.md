@@ -21,3 +21,6 @@ If you're not as familiar with learning Mandarin, the usual method that people a
 ### digital ocean url
 http://45.55.155.39:8080
 
+### feedback
+As with any of my projects, please submit any issues or pull requests. I would love to hear from you and improve on this project, resource, and tool. Thanks!
+
